@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    max-width: 70%;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header__link_active {
+    color: #96C291;
+}
