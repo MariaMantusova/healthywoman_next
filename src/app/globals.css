@@ -9,3 +9,8 @@ body {
   font-family: Roboto, sans-serif;
   background-color: #F4EEEE;
 }
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
