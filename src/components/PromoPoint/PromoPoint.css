@@ -1,0 +1,54 @@
+.promo-point__container {
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.promo-point__name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.promo-point {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 9px;
+    transition: all 0.4s ease-in-out;
+    background-color: rgba(150, 194, 145, 0.5);
+    border: 1px solid rgba(150, 194, 145, 0.4);
+    cursor: pointer;
+}
+
+.promo-point_active {
+    width: 33px;
+    height: 33px;
+    background-color: #96C291;
+    border-color: #96C291;
+}
+
+.promo-point:hover {
+    width: 33px;
+    height: 33px;
+    background-color: #96C291;
+    border-color: #96C291;
+}
+
+.promo-point__container_up {
+    top: 30px;
+    left: -70px;
+}
+
+.promo-point__container_medium {
+    top: 200px;
+    left: -200px;
+}
+
+.promo-point__container_down {
+    top: 400px;
+    left: -130px;
+}
