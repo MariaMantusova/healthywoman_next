@@ -3,6 +3,7 @@
     background-color: #96C291;
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 83px;
 }
 
 .diet-points__image {
@@ -16,7 +17,7 @@
 
 .diet-points__info {
     position: absolute;
-    bottom: -130px;
+    bottom: -50px;
     left: 340px;
     background-color: white;
     border-radius: 65px;

@@ -4,3 +4,10 @@ export interface IPropsPromoPoint {
     pointClass: string
     onClick: () => void
 }
+
+export interface IPropsProduct {
+    name: string
+    img: string
+    description: string
+    class?: string
+}
