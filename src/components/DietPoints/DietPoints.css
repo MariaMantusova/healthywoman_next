@@ -1,0 +1,81 @@
+.diet-points {
+    position: relative;
+    background-color: #96C291;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.diet-points__image {
+    position: absolute;
+    top: -200px;
+    left: 200px;
+    width: 620px;
+    height: 570px;
+    object-fit: contain;
+}
+
+.diet-points__info {
+    position: absolute;
+    bottom: -130px;
+    left: 340px;
+    background-color: white;
+    border-radius: 65px;
+    max-width: 337px;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 21px 133px 0 rgba(17, 95, 0, 0.21);
+}
+
+.diet-points__name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.diet-points__description {
+    margin: 0;
+    color: #6C997F;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.diet-points__container {
+    display: flex;
+    gap: 57px;
+    flex-direction: column;
+}
+
+.diet-points__title {
+    font-size: 41px;
+    color: white;
+    font-weight: 700;
+    margin-top: 68px;
+    margin-bottom: 0;
+    margin-right: 323px;
+}
+
+.diet-points__items {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 900px;
+    row-gap: 20px;
+    column-gap: 120px;
+}
+
+.diet-points__item {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    max-width: 363px;
+    width: 100%;
+}
