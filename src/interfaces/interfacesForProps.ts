@@ -7,6 +7,12 @@ export interface IPropsPromoPoint {
     onClick: () => void
 }
 
+export interface IPropsAboutUsPoint {
+    image: string
+    title: string
+    description: string
+}
+
 export interface IPropsProduct {
     name: string
     img: string
