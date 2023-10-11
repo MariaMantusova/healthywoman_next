@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface IPropsPromoPoint {
     name: string
     promoPointClass: string
@@ -10,4 +12,6 @@ export interface IPropsProduct {
     img: string
     description: string
     class?: string
+    isActive: boolean
+    setIsActive: React.Dispatch<React.SetStateAction<boolean>>
 }
