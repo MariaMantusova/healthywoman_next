@@ -105,6 +105,12 @@
     border-radius: 65px;
     background-clip: content-box;
     justify-content: flex-end;
+    transition: all 0.4s ease-in;
+}
+
+.promo__link:hover {
+    background-color: #F4EEEE;
+    color: #96C291;
 }
 
 .promo__link-pointer {

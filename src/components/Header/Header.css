@@ -27,6 +27,12 @@
     color: black;
     font-size: 14px;
     font-weight: 400;
+    transition: all 0.4s ease-in;
+}
+
+.header__link:hover {
+    color: #96C291;
+    opacity: 0.8;
 }
 
 .header__link_active {

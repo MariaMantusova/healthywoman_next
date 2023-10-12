@@ -44,6 +44,24 @@
     }
 }
 
+.product:hover {
+    opacity: 0.8;
+    max-width: 620px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .product:hover {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product:hover {
+        max-width: 305px;
+    }
+}
+
 .product__image {
     object-fit: cover;
     object-position: center;

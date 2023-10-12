@@ -1,6 +1,5 @@
 import Image from "next/image";
 import "./AboutUs.css";
-import AboutUsImage from "../../images/about-us-women.png";
 import {AboutUsPoint} from "../AboutUsPoint/AboutUsPoint";
 import EcoIcon from "../../images/eco-icon-about-us.svg";
 import BalanceIcon from "../../images/balance-icon-about-us.svg";
