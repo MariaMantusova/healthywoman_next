@@ -10,7 +10,7 @@ import HealthCareIcon from "../../images/health-care-icon-about-us.svg";
 const AboutUs = () => {
     return(
         <section className="about-us">
-            <Image className="about-us__image" src={AboutUsImage} alt="women"/>
+            <Image className="about-us__image" width={600} height={420} src="https://images.unsplash.com/photo-1518605360659-2aa9659ef66d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIyfHx3b21lbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="women"/>
             <div className="about-us__container">
                 <h2 className="about-us__title">Why women choose our recipes?</h2>
                 <ul className="about-us__list">
