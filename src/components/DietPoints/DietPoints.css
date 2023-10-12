@@ -97,6 +97,13 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .diet-points__container {
+        max-width: 440px;
+        gap: 40px;
+    }
+}
+
 .diet-points__title {
     font-size: 41px;
     color: white;
@@ -115,6 +122,13 @@
 @media screen and (max-width: 950px) {
     .diet-points__title {
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .diet-points__title {
+        font-size: 41px;
+        margin-top: 50px;
     }
 }
 

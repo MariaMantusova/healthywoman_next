@@ -13,11 +13,26 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .about-us {
+        gap: 85px;
+        padding-top: 0;
+        padding-bottom: 130px;
+    }
+}
+
 .about-us__image {
     object-fit: cover;
     max-width: 600px;
     max-height: 420px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-us__image {
+        max-width: 450px;
+        max-height: 300px;
+    }
 }
 
 .about-us__container {
@@ -33,11 +48,23 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .about-us__container {
+        max-width: 450px;
+    }
+}
+
 .about-us__title {
     color: #96C291;
     font-size: 41px;
     font-weight: 700;
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about-us__title {
+        text-align: center;
+    }
 }
 
 .about-us__list {

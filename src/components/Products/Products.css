@@ -7,6 +7,14 @@
     gap: 50px;
 }
 
+@media screen and (max-width: 768px) {
+    .products {
+        padding-top: 110px;
+        padding-bottom: 105px;
+        gap: 42px;
+    }
+}
+
 .products__title {
     color: #96C291;
     font-size: 41px;
@@ -14,6 +22,12 @@
     max-width: 480px;
     text-align: center;
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .products__title {
+        max-width: 465px;
+    }
 }
 
 .products__container {

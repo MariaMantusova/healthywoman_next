@@ -31,6 +31,14 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .promo-point {
+        width: 13px;
+        height: 13px;
+        padding: 5px;
+    }
+}
+
 .promo-point_active {
     width: 33px;
     height: 33px;
@@ -42,6 +50,13 @@
     .promo-point_active {
         width: 25px;
         height: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promo-point_active {
+        width: 17px;
+        height: 17px;
     }
 }
 
@@ -59,6 +74,13 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .promo-point:hover {
+        width: 17px;
+        height: 17px;
+    }
+}
+
 .promo-point__container_up {
     top: 30px;
     left: -70px;
@@ -70,6 +92,13 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .promo-point__container_up {
+        top: 30px;
+        left: -110px;
+    }
+}
+
 .promo-point__container_medium {
     top: 200px;
     left: -200px;
@@ -77,7 +106,8 @@
 
 @media screen and (max-width: 950px) {
     .promo-point__container_medium {
-       left: -195px;
+       left: -185px;
+        top: 140px;
     }
 }
 
@@ -88,6 +118,7 @@
 
 @media screen and (max-width: 950px) {
     .promo-point__container_down {
-        top: 350px;
+        left: -140px;
+        top: 230px;
     }
 }
