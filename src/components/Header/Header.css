@@ -3,8 +3,15 @@
     max-width: 70%;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     padding: 20px 0;
+}
+
+@media screen and (max-width: 490px) {
+    .header {
+        max-width: 90%;
+    }
 }
 
 .header__title {

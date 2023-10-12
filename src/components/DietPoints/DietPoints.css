@@ -129,6 +129,14 @@
     .diet-points__title {
         font-size: 41px;
         margin-top: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .diet-points__title {
+        font-size: 22px;
+        margin-top: 57px;
     }
 }
 
@@ -147,6 +155,18 @@
         justify-content: center;
         column-gap: 30px;
         max-width: 750px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .diet-points__items {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .diet-points__items {
+        max-width: 300px;
     }
 }
 

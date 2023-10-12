@@ -6,6 +6,12 @@
     position: absolute;
 }
 
+@media screen and (max-width: 480px) {
+    .promo-point__container {
+        display: none;
+    }
+}
+
 .promo-point__name {
     margin: 0;
     font-size: 18px;
@@ -28,6 +34,14 @@
     .promo-point {
         width: 20px;
         height: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promo-point {
+        width: 13px;
+        height: 13px;
+        padding: 5px;
     }
 }
 
@@ -106,6 +120,13 @@
 
 @media screen and (max-width: 950px) {
     .promo-point__container_medium {
+        left: -195px;
+        top: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .promo-point__container_medium {
        left: -185px;
         top: 140px;
     }
@@ -117,6 +138,13 @@
 }
 
 @media screen and (max-width: 950px) {
+    .promo-point__container_down {
+        left: -140px;
+        top: 340px;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .promo-point__container_down {
         left: -140px;
         top: 230px;

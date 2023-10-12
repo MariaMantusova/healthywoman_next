@@ -4,11 +4,23 @@
     align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+    .about-us__list {
+        gap: 12px;
+    }
+}
+
 .about-us__icon {
     padding: 15px;
     background-color: white;
     border-radius: 50%;
     filter: drop-shadow(0px 4px 35px rgba(25, 130, 189, 0.18));
+}
+
+@media screen and (max-width: 480px) {
+    .about-us__icon {
+        padding: 9px;
+    }
 }
 
 .about-us__info {
@@ -17,14 +29,32 @@
     gap: 11px;
 }
 
+@media screen and (max-width: 480px) {
+    .about-us__info {
+        gap: 5px;
+    }
+}
+
 .about-us__name {
     font-size: 20px;
     margin: 0;
     font-weight: 700;
 }
 
+@media screen and (max-width: 480px) {
+    .about-us__name {
+        font-size: 16px;
+    }
+}
+
 .about-us__description {
     font-size: 16px;
     margin: 0;
     font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+    .about-us__description {
+        font-size: 14px;
+    }
 }

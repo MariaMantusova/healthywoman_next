@@ -30,6 +30,13 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    .products__title {
+        max-width: 300px;
+        font-size: 22px;
+    }
+}
+
 .products__container {
     position: relative;
     margin: 0;
