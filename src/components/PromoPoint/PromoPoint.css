@@ -24,11 +24,25 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 950px) {
+    .promo-point {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 .promo-point_active {
     width: 33px;
     height: 33px;
     background-color: #96C291;
     border-color: #96C291;
+}
+
+@media screen and (max-width: 950px) {
+    .promo-point_active {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .promo-point:hover {
@@ -38,9 +52,22 @@
     border-color: #96C291;
 }
 
+@media screen and (max-width: 950px) {
+    .promo-point:hover {
+        width: 25px;
+        height: 25px;
+    }
+}
+
 .promo-point__container_up {
     top: 30px;
     left: -70px;
+}
+
+@media screen and (max-width: 950px) {
+    .promo-point__container_up {
+        left: -80px;
+    }
 }
 
 .promo-point__container_medium {
@@ -48,7 +75,19 @@
     left: -200px;
 }
 
+@media screen and (max-width: 950px) {
+    .promo-point__container_medium {
+       left: -195px;
+    }
+}
+
 .promo-point__container_down {
     top: 400px;
     left: -130px;
+}
+
+@media screen and (max-width: 950px) {
+    .promo-point__container_down {
+        top: 350px;
+    }
 }

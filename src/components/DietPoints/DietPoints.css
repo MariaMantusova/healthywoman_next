@@ -89,6 +89,14 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 950px) {
+    .diet-points__container {
+        max-width: 750px;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
 .diet-points__title {
     font-size: 41px;
     color: white;
@@ -104,9 +112,9 @@
     }
 }
 
-@media screen and (max-width: 1537px) {
+@media screen and (max-width: 950px) {
     .diet-points__title {
-        margin-right: 100px;
+        margin-right: 0;
     }
 }
 
@@ -118,6 +126,14 @@
     max-width: 900px;
     row-gap: 20px;
     column-gap: 120px;
+}
+
+@media screen and (max-width: 950px) {
+    .diet-points__items {
+        justify-content: center;
+        column-gap: 30px;
+        max-width: 750px;
+    }
 }
 
 .diet-points__item {
