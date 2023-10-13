@@ -1,4 +1,5 @@
 import React from "react";
+import { TRecipeInRecipes } from "../types/mainTypes";
 
 export interface IPropsPromoPoint {
     name: string
@@ -33,4 +34,17 @@ export interface IPropsRecipeIngredient {
 export interface IPropsRecipeInfoItem {
     infoTitle: string
     infoText: string
+}
+
+export interface IPropsSearchInput {
+    placeholder: string
+    type: string
+}
+
+export interface IPropsRecipes {
+    recipes: TRecipeInRecipes[]
+}
+
+export interface IPropsRecipeCard {
+    recipe: TRecipeInRecipes
 }

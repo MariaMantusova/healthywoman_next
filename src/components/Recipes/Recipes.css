@@ -1,0 +1,14 @@
+.recipes__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.recipes__found-text {
+    font-size: 27px;
+    margin: 0;
+    color: #96C291;
+}

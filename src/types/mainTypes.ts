@@ -14,3 +14,11 @@ export type TRecipePage = {
     ingredientPhoto: string
   }[]
 }
+
+export type TRecipeInRecipes = {
+  recipeName: string
+  recipeImage: string
+  recipeIngredients: string[],
+  "recipeCalories": number,
+  "recipeID": string
+}
