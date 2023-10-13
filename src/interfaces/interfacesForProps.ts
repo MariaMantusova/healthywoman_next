@@ -21,3 +21,16 @@ export interface IPropsProduct {
     isActive: boolean
     setIsActive: React.Dispatch<React.SetStateAction<boolean>>
 }
+
+export interface IPropsRecipeIngredient {
+    ingredient: {
+        nameOfIngredient: string
+        ingredientWeight: number
+        ingredientPhoto: string
+    }
+}
+
+export interface IPropsRecipeInfoItem {
+    infoTitle: string
+    infoText: string
+}
