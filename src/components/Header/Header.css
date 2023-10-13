@@ -3,7 +3,7 @@
     max-width: 70%;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -27,7 +27,11 @@
     color: black;
     font-size: 14px;
     font-weight: 400;
+    border: none;
+    background-color: transparent;
     transition: all 0.4s ease-in;
+    position: relative;
+    cursor: pointer;
 }
 
 .header__link:hover {
