@@ -6,7 +6,7 @@ const SimpleSelect = (props: IPropsSimpleSelect) => {
     <Select
       showSearch
       placeholder={props.placeholder}
-      style={{width: 400, marginTop: "50px", marginBottom: "50px"}}
+      style={{width: 300, marginTop: "50px", marginBottom: "50px"}}
       options={props.categoriesArray}
     />
   )

@@ -6,6 +6,13 @@
     align-items: center;
 }
 
+@media screen and (max-width: 650px) {
+    .form {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
 .search-input {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -16,6 +23,12 @@
     border-radius: 30px;
     width: 400px;
     background-color: transparent;
+}
+
+@media screen and (max-width: 480px) {
+    .search-input {
+        width: 270px;
+    }
 }
 
 input[type="number"]::-webkit-outer-spin-button,
