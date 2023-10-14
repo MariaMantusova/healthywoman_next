@@ -18,6 +18,11 @@
     background-color: transparent;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .form__button {
     background-color: #96C291;
     border: none;

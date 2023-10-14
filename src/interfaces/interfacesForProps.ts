@@ -1,5 +1,6 @@
 import React from "react";
 import { TRecipeInRecipes } from "../types/mainTypes";
+import { TCategoryInArray } from "../types/rareTypes";
 
 export interface IPropsPromoPoint {
     name: string
@@ -47,4 +48,9 @@ export interface IPropsRecipes {
 
 export interface IPropsRecipeCard {
     recipe: TRecipeInRecipes
+}
+
+export interface IPropsSimpleSelect {
+    placeholder: string
+    categoriesArray: TCategoryInArray[]
 }
