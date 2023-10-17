@@ -1,0 +1,14 @@
+.message-block {
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-block__text {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #e96767;
+}

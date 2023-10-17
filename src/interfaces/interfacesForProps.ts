@@ -40,6 +40,9 @@ export interface IPropsRecipeInfoItem {
 export interface IPropsSearchInput {
     placeholder: string
     type: string
+    setValue: React.Dispatch<React.SetStateAction<string | number>>
+    value: string | number
+    onSubmit: () => void
 }
 
 export interface IPropsRecipes {
@@ -53,4 +56,8 @@ export interface IPropsRecipeCard {
 export interface IPropsSimpleSelect {
     placeholder: string
     categoriesArray: TCategoryInArray[]
+}
+
+export interface IPropsMessageBlock {
+    text: string
 }
