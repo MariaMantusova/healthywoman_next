@@ -144,10 +144,6 @@ const dishTypesArray: TCategoryInArray[] = [
     label: "Egg"
   },
   {
-    value: "ice cream and custard",
-    label: "Ice cream and custard"
-  },
-  {
     value: "main course",
     label: "Main course"
   },
@@ -158,22 +154,6 @@ const dishTypesArray: TCategoryInArray[] = [
   {
     value: "pasta",
     label: "Pasta"
-  },
-  {
-    value: "pies and tarts",
-    label: "Pies and tarts"
-  },
-  {
-    value: "pizza",
-    label: "Pizza"
-  },
-  {
-    value: "salad",
-    label: "Salad"
-  },
-  {
-    value: "pies and tarts",
-    label: "Pies and tarts"
   },
   {
     value: "pizza",
