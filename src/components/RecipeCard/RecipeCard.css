@@ -10,6 +10,7 @@
     margin-bottom: 40px;
     box-sizing: border-box;
     transition: border 0.3s linear;
+    cursor: pointer;
 }
 
 .recipe-card:hover {
@@ -29,7 +30,6 @@
     align-items: center;
     min-width: 60%;
     gap: 50px;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {

@@ -12,14 +12,17 @@ export default function RecipesPage() {
   const [keyword, setKeyword] = useState("");
   const [recipes, setRecipes] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(false);
+  const [error, setError] = useState("");
 
   function handleSubmit() {
-    setIsError(false);
+    setError("");
     setIsLoading(true);
     getRecipesByCategory("word", keyword)
       .then((res) => {
-        Array.isArray(res) ? setRecipes(res) : setIsError(true)
+        Array.isArray(res) ? setRecipes(res) : setError(res.message)
+      })
+      .catch(() => {
+        setError("We cannot get this route")
       })
       .finally(() => {
         setIsLoading(false)
@@ -32,12 +35,18 @@ export default function RecipesPage() {
       <SearchInput placeholder="Chicken" type="text" setValue={setKeyword} value={keyword} onSubmit={handleSubmit} />
       {isLoading ?
         <Preloader /> :
-        isError ?
+        error === "Not found" ?
           <MessageBlock text="We could not find recipes according to your request"
                         class="message-block__text_error" /> :
-          recipes.length < 1 ?
-            <MessageBlock text="Let's start" class="message-block__text_info" /> :
-            <Recipes recipes={recipes} />}
+          error === "Validation failed" ?
+            <MessageBlock text="Your request is wrong, try to write 4 or more letters"
+                          class="message-block__text_error" /> :
+            error ?
+              <MessageBlock text={error}
+                            class="message-block__text_error" /> :
+              recipes.length < 1 ?
+                <MessageBlock text="Let's start" class="message-block__text_info" /> :
+                <Recipes recipes={recipes} />}
     </section>
   );
 }
