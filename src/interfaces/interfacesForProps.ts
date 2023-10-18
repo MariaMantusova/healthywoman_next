@@ -61,6 +61,7 @@ export interface IPropsSimpleSelect {
 
 export interface IPropsMessageBlock {
     text: string
+    class: string
 }
 
 export interface IRecipeProps {

@@ -22,7 +22,7 @@ export default function RecipesByMealPage() {
         Array.isArray(res) ? setRecipes(res) : setIsError(true)
       })
       .finally(() => {
-        setIsLoading(false)
+        setIsLoading(false);
       })
   }
 
@@ -32,10 +32,13 @@ export default function RecipesByMealPage() {
       <SimpleSelect placeholder="Choose meal" categoriesArray={mealTypesArray}
                     onSelect={handleSelect} />
       {isLoading ?
-        <Preloader/> :
+        <Preloader /> :
         isError ?
-          <MessageBlock text="We could not find recipes according to your request" /> :
-          <Recipes recipes={recipes} />}
+          <MessageBlock text="We could not find recipes according to your request"
+                        class="message-block__text_error" /> :
+          recipes.length < 1 ?
+            <MessageBlock text="Let's start" class="message-block__text_info" /> :
+            <Recipes recipes={recipes} />}
     </section>
-  )
+  );
 }

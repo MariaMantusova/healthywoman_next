@@ -28,13 +28,16 @@ export default function RecipesByCaloriesPage() {
 
     return (
       <section className="recipes">
-          <h1 className="recipes__title">Enter calories count and we will find recipes</h1>
-          <SearchInput placeholder="200" type="number" setValue={setCalories} value={calories} onSubmit={handleSubmit} />
+        <h1 className="recipes__title">Enter calories count and we will find recipes</h1>
+        <SearchInput placeholder="200" type="number" setValue={setCalories} value={calories} onSubmit={handleSubmit} />
         {isLoading ?
-          <Preloader/> :
+          <Preloader /> :
           isError ?
-            <MessageBlock text="We could not find recipes according to your request" /> :
-            <Recipes recipes={recipes} />}
+            <MessageBlock text="We could not find recipes according to your request"
+                          class="message-block__text_error" /> :
+            recipes.length < 1 ?
+              <MessageBlock text="Let's start" class="message-block__text_info" /> :
+              <Recipes recipes={recipes} />}
       </section>
     )
 }

@@ -31,10 +31,13 @@ export default function RecipesPage() {
       <h1 className="recipes__title">Enter keyword and we will find recipes</h1>
       <SearchInput placeholder="Chicken" type="text" setValue={setKeyword} value={keyword} onSubmit={handleSubmit} />
       {isLoading ?
-        <Preloader/> :
+        <Preloader /> :
         isError ?
-         <MessageBlock text="We could not find recipes according to your request" /> :
-          <Recipes recipes={recipes} />}
+          <MessageBlock text="We could not find recipes according to your request"
+                        class="message-block__text_error" /> :
+          recipes.length < 1 ?
+            <MessageBlock text="Let's start" class="message-block__text_info" /> :
+            <Recipes recipes={recipes} />}
     </section>
   );
 }
