@@ -15,7 +15,7 @@ const Promo = () => {
         PregnantImage :
         imageState === "withChild" ?
             WithChildImage :
-            imageState === "alone" ? AloneImage : null
+            imageState === "alone" ? AloneImage : PregnantImage
 
     function onClickPromoPointPregnant() {
         setImageState("pregnant")
