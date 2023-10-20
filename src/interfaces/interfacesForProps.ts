@@ -1,5 +1,5 @@
 import React from "react";
-import { TRecipeInRecipes } from "../types/mainTypes";
+import { TRecipeInRecipes, TRecipePage } from "../types/mainTypes";
 import { TCategoryInArray } from "../types/rareTypes";
 
 export interface IPropsPromoPoint {
@@ -84,6 +84,10 @@ export interface IPropsRecipesPageWithSelect {
     titleName: string
     categoriesArray: TCategoryInArray[]
     placeholder: string
+}
+
+export interface IPropsRecipePage {
+    recipe: TRecipePage
 }
 
 export interface IRecipeProps {

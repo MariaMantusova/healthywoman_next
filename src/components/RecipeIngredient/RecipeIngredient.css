@@ -10,6 +10,7 @@
 .recipe__ingredient-name {
     margin: 0;
     font-size: 18px;
+    text-align: center;
 }
 
 .recipe__ingredient-weight {

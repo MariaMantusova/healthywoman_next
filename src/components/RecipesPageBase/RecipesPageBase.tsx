@@ -15,7 +15,7 @@ const RecipesPageBase = (props: IPropsRecipesPageBase) => {
           <MessageBlock text="We could not find recipes according to your request"
                         class="message-block__text_error" /> :
           props.error === "Validation failed" ?
-            <MessageBlock text="Your request is wrong, try to write 4 or more letters"
+            <MessageBlock text="Your request is wrong"
                           class="message-block__text_error" /> :
             props.error ?
               <MessageBlock text={props.error}
