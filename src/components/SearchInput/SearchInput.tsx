@@ -1,12 +1,13 @@
 import "./SearchInput.css";
 import { IPropsSearchInput } from "../../interfaces/interfacesForProps";
+import { Event } from "next/dist/compiled/@edge-runtime/primitives";
 
 const SearchInput = (props: IPropsSearchInput) => {
-  function handleChange(evt) {
+  function handleChange(evt: any) {
     props.setValue(evt.target.value);
   }
 
-  function handleSubmit(evt) {
+  function handleSubmit(evt: any) {
     evt.preventDefault();
 
     props.onSubmit();
