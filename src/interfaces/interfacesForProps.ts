@@ -5,7 +5,7 @@ import { TCategoryInArray } from "../types/rareTypes";
 export interface IPropsPromoPoint {
     name: string
     promoPointClass: string
-    pointClass: string
+    pointClass: string | boolean
     onClick: () => void
 }
 
