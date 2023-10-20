@@ -1,4 +1,4 @@
-# Проект "Healthy women"
+# Проект "Healthy woman"
 
 ## О проекте
 
