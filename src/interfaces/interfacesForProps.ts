@@ -34,7 +34,7 @@ export interface IPropsRecipeIngredient {
 
 export interface IPropsRecipeInfoItem {
     infoTitle: string
-    infoText: string
+    infoText: string | number
 }
 
 export interface IPropsSearchInput {
