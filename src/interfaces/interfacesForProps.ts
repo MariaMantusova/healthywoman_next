@@ -56,7 +56,7 @@ export interface IPropsRecipeCard {
 export interface IPropsSimpleSelect {
     placeholder: string
     categoriesArray: TCategoryInArray[]
-    onSelect: (string) => void
+    onSelect: (arg0: string) => void
 }
 
 export interface IPropsMessageBlock {
