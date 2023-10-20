@@ -1,9 +1,13 @@
 .message-block {
     width: 100vw;
-    height: 90vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.message-block__page {
+    height: 90vh;
 }
 
 .message-block__text {
