@@ -64,6 +64,28 @@ export interface IPropsMessageBlock {
     class: string
 }
 
+export interface IPropsRecipesPageBase {
+    children: React.ReactNode
+    titleName: string
+    isLoading: boolean
+    error: string
+    recipes: TRecipeInRecipes[]
+}
+
+export interface IPropsRecipesPageWithSearchForm {
+    category: string
+    titleName: string
+    placeholder: string
+    inputType: string
+}
+
+export interface IPropsRecipesPageWithSelect {
+    category: string
+    titleName: string
+    categoriesArray: TCategoryInArray[]
+    placeholder: string
+}
+
 export interface IRecipeProps {
     params: {
         id: string
