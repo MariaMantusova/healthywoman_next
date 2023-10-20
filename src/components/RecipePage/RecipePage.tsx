@@ -3,10 +3,12 @@ import Image from "next/dist/client/legacy/image";
 import { RecipeInfoItem } from "../RecipeInfoItem/RecipeInfoItem";
 import { RecipeIngredient } from "../RecipeIngredient/RecipeIngredient";
 import { IPropsRecipePage } from "../../interfaces/interfacesForProps";
+import { LinkBack } from "../LinkBack/LinkBack";
 
 const RecipePage = (props: IPropsRecipePage) => {
   return (
     <section className="recipe">
+      <LinkBack/>
       <h1 className="recipe__name">{props.recipe.recipeName}</h1>
       <div className="recipe__container">
         <Image className="recipe__image" width={310} height={310} src={props.recipe.recipeImage}

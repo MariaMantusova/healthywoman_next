@@ -1,0 +1,10 @@
+.link-back {
+    color: #96C291;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    align-self: flex-start;
+    margin: 0 0 0 50px;
+    cursor: pointer;
+}
