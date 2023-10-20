@@ -5,10 +5,11 @@ import { getRecipesByCategory } from "../../utils/api";
 import { SearchInput } from "../SearchInput/SearchInput";
 import { IPropsRecipesPageWithSearchForm } from "../../interfaces/interfacesForProps";
 import { RecipesPageBase } from "../RecipesPageBase/RecipesPageBase";
+import { TRecipeInRecipes } from "../../types/mainTypes";
 
 const RecipesPageWithSearchForm = (props: IPropsRecipesPageWithSearchForm) => {
   const [meaning, setMeaning] = useState<string | number>("");
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState<TRecipeInRecipes[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 

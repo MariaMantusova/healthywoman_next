@@ -5,9 +5,10 @@ import { RecipesPageBase } from "../RecipesPageBase/RecipesPageBase";
 import { getRecipesByCategory } from "../../utils/api";
 import { SimpleSelect } from "../Select/Select";
 import { IPropsRecipesPageWithSelect } from "../../interfaces/interfacesForProps";
+import { TRecipeInRecipes } from "../../types/mainTypes";
 
 const RecipesPageWithSelect = (props: IPropsRecipesPageWithSelect) => {
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState<TRecipeInRecipes[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
