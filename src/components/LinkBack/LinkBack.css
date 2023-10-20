@@ -7,4 +7,9 @@
     align-self: flex-start;
     margin: 0 0 0 50px;
     cursor: pointer;
+    transition: color 0.4s ease-in;
+}
+
+.link-back:hover {
+    color: #6C997F;
 }

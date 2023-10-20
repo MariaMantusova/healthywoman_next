@@ -2,9 +2,11 @@ import { IRecipeProps } from "../../../interfaces/interfacesForProps";
 import { getRecipeByID } from "../../../utils/api";
 import { RecipePage } from "../../../components/RecipePage/RecipePage";
 
-export function generateMetadata({ params: { id } }: IRecipeProps) {
+export async function generateMetadata({ params: { id } }: IRecipeProps) {
+  const recipe = await getRecipeByID(id);
+
   return {
-    title: id
+    title: recipe.recipeName
   };
 }
 
