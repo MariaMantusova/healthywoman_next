@@ -1,0 +1,128 @@
+.recipe {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    gap: 75px;
+    width: 100%;
+    align-items: center;
+}
+
+.recipe__name {
+    font-size: 38px;
+    margin: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .recipe__name {
+        font-size: 28px;
+        margin: 0 15px;
+    }
+}
+
+.recipe__container {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    width: 100%;
+    gap: 250px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1270px) {
+    .recipe__container {
+       gap: 100px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .recipe__container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.recipe__image {
+    max-width: 500px;
+    max-height: 400px;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+}
+
+.recipe__list-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0;
+    max-width: 600px;
+    padding: 0;
+}
+
+@media screen and (max-width: 1080px) {
+    .recipe__list-info {
+        max-width: 400px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recipe__list-info {
+        gap: 15px;
+    }
+}
+
+.recipe__healthy-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    max-width: 70%;
+}
+
+.recipe__title {
+    margin: 0;
+    font-size: 32px;
+    color: #96C291;
+}
+
+.recipe__healthy-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+}
+
+.recipe__healthy-item {
+    font-size: 16px;
+    padding: 5px 15px;
+    border: 1px solid #96C291;
+    border-radius: 15px;
+}
+
+.recipe__ingredients {
+    max-width: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.recipe__ingredients-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    column-gap: 55px;
+    row-gap: 75px;
+    justify-content: center;
+}

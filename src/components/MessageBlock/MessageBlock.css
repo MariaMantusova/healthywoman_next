@@ -1,0 +1,25 @@
+.message-block {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-block__page {
+    height: 90vh;
+}
+
+.message-block__text {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.message-block__text_error {
+    color: #e96767;
+}
+
+.message-block__text_info {
+    color: #96C291;
+}

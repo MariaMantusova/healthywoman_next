@@ -1,0 +1,27 @@
+.recipe__ingredient {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    width: 100%;
+    gap: 25px;
+    align-items: center;
+}
+
+.recipe__ingredient-name {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.recipe__ingredient-weight {
+    margin: 0;
+    font-size: 14px;
+}
+
+.recipe__ingredient-image {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}

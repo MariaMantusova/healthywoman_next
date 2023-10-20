@@ -1,0 +1,25 @@
+.recipes {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipes__title {
+    font-size: 35px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .recipes__title {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recipes__title {
+        font-size: 20px;
+    }
+}

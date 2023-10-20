@@ -1,0 +1,15 @@
+.link-back {
+    color: #96C291;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    align-self: flex-start;
+    margin: 0 0 0 50px;
+    cursor: pointer;
+    transition: color 0.4s ease-in;
+}
+
+.link-back:hover {
+    color: #6C997F;
+}

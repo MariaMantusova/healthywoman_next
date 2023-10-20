@@ -1,0 +1,133 @@
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #96C291;
+    width: 100%;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    transition: border 0.3s linear;
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    border: 4px solid #96C291;
+}
+
+@media screen and (max-width: 480px) {
+    .recipe-card {
+       padding: 15px 30px;
+        width: 280px;
+    }
+}
+
+.recipe-card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 60%;
+    gap: 50px;
+}
+
+@media screen and (max-width: 650px) {
+    .recipe-card__info {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+.recipe-card__image {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.recipe-card__info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 60%;
+    align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+    .recipe-card__info-text {
+        max-width: 85%;
+    }
+}
+
+.recipe-card__name {
+    margin: 0;
+    font-size: 20px;
+    color: black;
+}
+
+@media screen and (max-width: 650px) {
+    .recipe-card__name {
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
+.recipe-card__calories {
+    margin: 0;
+    font-size: 16px;
+    color: #96C291;
+}
+
+.recipe-card__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .recipe-card__list {
+        display: none;
+    }
+}
+
+.recipe-card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #96C291;
+}
+
+@media screen and (max-width: 650px) {
+    .recipe-card__title {
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
+.recipe-card__ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 20px;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 650px) {
+    .recipe-card__ingredients {
+        row-gap: 15px;
+    }
+}
+
+.recipe-card__ingredient {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 650px) {
+    .recipe-card__ingredient {
+        font-size: 12px;
+    }
+}
+

@@ -1,0 +1,29 @@
+.header__menu {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    align-items: flex-start;
+    margin: 0;
+    list-style: none;
+}
+
+@media screen and (max-width: 1150px) {
+    .header__menu {
+        position: relative;
+    }
+}
+
+.menu__link{
+    font-size: 12px;
+    color: #96C291;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu__link:hover {
+    opacity: 0.7;
+}
