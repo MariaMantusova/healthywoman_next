@@ -19,7 +19,7 @@ export interface IPropsProduct {
     name: string
     img: string
     description: string
-    class?: string
+    class?: string | boolean
     isActive: boolean
     setIsActive: React.Dispatch<React.SetStateAction<boolean>>
 }
